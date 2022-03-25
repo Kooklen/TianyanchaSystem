@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c95d7f26-527d-490d-be82-e71f2bae4f0e" name="默认变更列表" comment="test" />
+    <list default="true" id="c95d7f26-527d-490d-be82-e71f2bae4f0e" name="默认变更列表" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,9 +56,8 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backEnd" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -65,11 +67,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\Desktop\test_user\backEnd" />
       <recent name="C:\Users\DELL\Desktop\test_user\public" />
       <recent name="C:\Users\DELL\Desktop\test_user\src\assets" />
       <recent name="C:\Users\DELL\Desktop\test_user\src\md" />
       <recent name="C:\Users\DELL\Desktop\test_user\docs\.vuepress" />
-      <recent name="C:\Users\DELL\Desktop\test\src\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\DELL\Desktop\test_user\src\util" />
@@ -177,7 +179,7 @@
       <workItem from="1648175029818" duration="2707000" />
       <workItem from="1648180511824" duration="398000" />
       <workItem from="1648180915036" duration="16000" />
-      <workItem from="1648180941679" duration="302000" />
+      <workItem from="1648180941679" duration="1768000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1634634179426</created>
@@ -235,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648177901285</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="后端服务在backEnd&#10;要求java8+">
+      <created>1648181377021</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1648181377021</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +266,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="test" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="后端服务在backEnd&#10;要求java8+" />
+    <option name="LAST_COMMIT_MESSAGE" value="后端服务在backEnd&#10;要求java8+" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
