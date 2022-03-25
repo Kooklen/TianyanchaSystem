@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c95d7f26-527d-490d-be82-e71f2bae4f0e" name="默认变更列表" comment="test" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9b402be9-0746-489b-bdad-2414c9143082" />
+        <option name="url" value="git@github.com:Kooklen/TianyanchaSystem-FrontEnd.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectId" id="1zf58Q0gNDSjDuq5fDC98VfTNCr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.splitter.proportion" value="0.22097759" />
+    <property name="ts.external.directory.path" value="C:\Users\DELL\Desktop\test_user\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\Desktop\test_user\public" />
+      <recent name="C:\Users\DELL\Desktop\test_user\src\assets" />
+      <recent name="C:\Users\DELL\Desktop\test_user\src\md" />
+      <recent name="C:\Users\DELL\Desktop\test_user\docs\.vuepress" />
+      <recent name="C:\Users\DELL\Desktop\test\src\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\Desktop\test_user\src\util" />
+      <recent name="C:\Users\DELL\Desktop\test_user\src\utils" />
+      <recent name="C:\Users\DELL\Desktop\test_user\public" />
+      <recent name="C:\Users\DELL\Desktop\test_user" />
+      <recent name="C:\Users\DELL\Desktop\test_user\src\assets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.serve">
+    <configuration name="未命名" type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.未命名" />
+      <item itemvalue="npm.serve" />
+      <item itemvalue="npm.build" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="c95d7f26-527d-490d-be82-e71f2bae4f0e" name="默认变更列表" comment="" />
+      <created>1634526142573</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634526142573</updated>
+      <workItem from="1634526144327" duration="7945000" />
+      <workItem from="1634540849068" duration="42273000" />
+      <workItem from="1634787921522" duration="595000" />
+      <workItem from="1634797208859" duration="15304000" />
+      <workItem from="1634873394014" duration="6368000" />
+      <workItem from="1635142555720" duration="3414000" />
+      <workItem from="1635154034870" duration="46717000" />
+      <workItem from="1635488514632" duration="3254000" />
+      <workItem from="1635499209657" duration="153000" />
+      <workItem from="1635499381646" duration="1206000" />
+      <workItem from="1635817487482" duration="2849000" />
+      <workItem from="1635953061949" duration="609000" />
+      <workItem from="1636007013286" duration="15000" />
+      <workItem from="1636531816691" duration="145000" />
+      <workItem from="1636960566773" duration="1271000" />
+      <workItem from="1637201210523" duration="1344000" />
+      <workItem from="1637891394500" duration="3446000" />
+      <workItem from="1638415219430" duration="9883000" />
+      <workItem from="1638849038165" duration="3089000" />
+      <workItem from="1638868637636" duration="678000" />
+      <workItem from="1638928739032" duration="2996000" />
+      <workItem from="1639358793062" duration="32202000" />
+      <workItem from="1639618152816" duration="57148000" />
+      <workItem from="1640229897928" duration="9284000" />
+      <workItem from="1640329067202" duration="97740000" />
+      <workItem from="1641364643199" duration="14670000" />
+      <workItem from="1641536306443" duration="132000" />
+      <workItem from="1641536457695" duration="646000" />
+      <workItem from="1641801532523" duration="677000" />
+      <workItem from="1641867211698" duration="5518000" />
+      <workItem from="1641884255064" duration="10223000" />
+      <workItem from="1642041491041" duration="599000" />
+      <workItem from="1642057274686" duration="20521000" />
+      <workItem from="1642391292403" duration="307000" />
+      <workItem from="1642392276819" duration="9301000" />
+      <workItem from="1642561255984" duration="12486000" />
+      <workItem from="1642584026878" duration="1002000" />
+      <workItem from="1642643427686" duration="21476000" />
+      <workItem from="1642734741012" duration="428000" />
+      <workItem from="1642735179652" duration="28699000" />
+      <workItem from="1643172495067" duration="98000" />
+      <workItem from="1643264612413" duration="19924000" />
+      <workItem from="1644374501524" duration="10976000" />
+      <workItem from="1644397064312" duration="51216000" />
+      <workItem from="1644908792073" duration="20826000" />
+      <workItem from="1645692277657" duration="4307000" />
+      <workItem from="1646731719766" duration="1218000" />
+      <workItem from="1647503930646" duration="340000" />
+      <workItem from="1647504863818" duration="1198000" />
+      <workItem from="1647567044193" duration="914000" />
+      <workItem from="1648110997274" duration="3013000" />
+      <workItem from="1648114882658" duration="1616000" />
+      <workItem from="1648175029818" duration="2707000" />
+      <workItem from="1648180511824" duration="398000" />
+      <workItem from="1648180915036" duration="16000" />
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1634634179426</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634634179426</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test">
+      <created>1634701113513</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634701113513</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test">
+      <created>1634804661874</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634804661874</updated>
+    </task>
+    <task id="LOCAL-00004" summary="test">
+      <created>1635317779735</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1635317779735</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test">
+      <created>1648111845563</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648111845563</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update">
+      <created>1648177585482</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1648177585482</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update">
+      <created>1648177771278</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1648177771278</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update">
+      <created>1648177901285</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1648177901285</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="test" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/views/test.vue</url>
+          <line>6</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
