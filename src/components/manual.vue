@@ -2,16 +2,6 @@
   <div class="main">
     <br>
     <el-container style="margin: 0">
-      <!--      <el-header>-->
-
-      <!--        <div class="flex-row left">-->
-      <!--          <div class="header_word flex-col">-->
-      <!--            <span>应用说明</span>-->
-      <!--          </div>-->
-      <!--        </div>-->
-
-
-      <!--      </el-header>-->
       <el-container>
 
         <div class="main_background">

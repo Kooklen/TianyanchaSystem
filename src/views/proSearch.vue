@@ -46,7 +46,7 @@
                 placeholder="请输入企业的名称、法人、户表号"
                 @select="handleSelect"
             >
-              <div v-if="visible">未能找到相关企业，请提交查询需求</div>
+<!--              <div v-if="visible">未能找到相关企业，请提交查询需求</div>-->
             </el-autocomplete>
             <img src="@/img/upload.png" style="width: 40px;height: 40px;" class="upload" @click="toUpload">
             <input type="submit" @click="submit" value="查找" class="submit">

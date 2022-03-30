@@ -29,7 +29,7 @@
                       :placeholder=inputword
                       @select="handleSelect"
                   >
-                    <div v-if="visible">未能查到对应企业，请提交查询需求</div>
+                    <div v-if="visible">查找中...</div>
 
                   </el-autocomplete>
 
@@ -49,7 +49,7 @@
                 width="40%"
                 :before-close="handleClose"
             >
-              <span style="font-size: 20px">您是否已经获得正在查询企业的授权</span>
+              <span style="font-size: 20px">企业已查找成功，您是否已经获得正在查询企业的授权</span>
               <template #footer>
       <span class="dialog-footer">
         <el-button @click="handleClose">没有</el-button>
@@ -73,7 +73,7 @@
         <el-tab-pane label="贷后预警" v-if="userData.monitorf==true" name="second" :key="'second'"
         >
           <div class="inner">
-          <sys-monitor ismonitor="1" iscancelmonitor="0" totrigger="1" lasttrigger="1"></sys-monitor>
+            <sys-monitor ismonitor="1" iscancelmonitor="0" totrigger="1" lasttrigger="1"></sys-monitor>
           </div>
         </el-tab-pane>
 
@@ -123,7 +123,25 @@
             width="30%"
             :before-close="handleClose"
         >
-          <span style="font-size: 20px">请选择处理方式</span>
+          <div>
+            <el-table :data="companyData" border style="width: 100%">
+              <el-table-column prop="id" label="id" width="80"/>
+              <el-table-column prop="companyname" label="企业名称" width="100"/>
+              <el-table-column prop="industryname" label="行业名称"/>
+              <el-table-column prop="capacity" label="用电容量"/>
+              <el-table-column prop="dateestablishment" label="立户日期"/>
+              <el-table-column prop="yieldscore" label="产量水平得分"/>
+              <el-table-column prop="industryrate" label="行业超越率"/>
+              <el-table-column prop="rankinglevel" label="排名等级"/>
+              <el-table-column prop="outstandingfees" label="欠费规模"/>
+              <el-table-column prop="numberoutstandingfees" label="欠费次数"/>
+              <el-table-column prop="maxnumberoutstandingfees" label="最大欠费期数"/>
+              <el-table-column prop="numberofdefaults" label="违约次数"/>
+              <el-table-column prop="numberofelectricitytheft" label="窃电次数"/>
+              <el-table-column prop="theftrate" label="违窃率"/>
+            </el-table>
+          </div>
+
           <template #footer>
       <span class="dialog-footer">
         <el-button @click="handleClose">取消</el-button>
@@ -151,22 +169,23 @@
 <script>
 import Header from "@/components/header";
 import {ElMessageBox} from "element-plus";
-import { ElNotification } from 'element-plus'
+import {ElNotification} from 'element-plus'
 import {ref} from "vue";
 import sysMonitor from "@/views/sysMonitor";
 import backStage from "@/views/backStage";
 import pdf from "vue3-pdf";
 import {userMainStore} from "@/store"
 import Manual from "@/components/manual";
-import {addSearchRecord} from "@/js/api";
+import {addSearchRecord, searchCompanyData} from "@/js/api";
 
 export default {
   name: "search",
   components: {Manual, backStage, sysMonitor, Header},
   data() {
     return {
+      companyData: [],
       activeName: "first",
-      url:"/pdf/intro.pdf",
+      url: "/pdf/intro.pdf",
       numPages: null, // pdf 总页数
       inputword: "请输入企业的名称",
       userData: [],
@@ -188,21 +207,21 @@ export default {
       legalp: '0',
       search: '0',
       tableData: [
-        {
-          date: '2016-05-02',
-          name: 'John Smith',
-          address: 'No.1518,  Jinshajiang Road, Putuo District',
-        },
-        {
-          date: '2016-05-04',
-          name: 'John Smith',
-          address: 'No.1518,  Jinshajiang Road, Putuo District',
-        },
-        {
-          date: '2016-05-01',
-          name: 'John Smith',
-          address: 'No.1518,  Jinshajiang Road, Putuo District',
-        },
+        // {
+        //   date: '2016-05-02',
+        //   name: 'John Smith',
+        //   address: 'No.1518,  Jinshajiang Road, Putuo District',
+        // },
+        // {
+        //   date: '2016-05-04',
+        //   name: 'John Smith',
+        //   address: 'No.1518,  Jinshajiang Road, Putuo District',
+        // },
+        // {
+        //   date: '2016-05-01',
+        //   name: 'John Smith',
+        //   address: 'No.1518,  Jinshajiang Road, Putuo District',
+        // },
       ],
       loading: true,
       selectCompany: '',
@@ -211,7 +230,7 @@ export default {
   created() {
     const store = userMainStore()
     console.log(store.count);
-    this.handleClick(1,1)
+    this.handleClick(1, 1)
     this.getNumPages()
     this.userData = JSON.parse(localStorage.getItem("user-data"))
     ElNotification({
@@ -229,8 +248,8 @@ export default {
   }
   ,
   methods: {
-    changetabs(data){
-      this.activeName=data
+    changetabs(data) {
+      this.activeName = data
       // console.log(data);
     },
     getNumPages() {
@@ -240,32 +259,13 @@ export default {
       }).catch(err => {
         console.error('pdf 加载失败', err);
       })
-    }
-    // ,
-    // showmodule(data) {
-    //   module = data.module
-    // }
-    ,
+    },
     uploadSuccess(files, fileList) {
       this.nextButton = true
     },
     authorizationConfirm() {
       this.authorizationDialog = false;
-      this.author = true;
-      // this.downloadDialog=true;
-      addSearchRecord(
-          {
-            userid: this.userData.userid,
-            username: this.userData.username,
-            companyname:this.state,
-          }
-      ).then((response) => {
-        if (response.data != null) {
-          console.log(response);
-        } else {
-          console.log(response);
-        }
-    })
+      this.downloadDialog = true;
     },
     handleClick(tab, event) {
       // console.log(tab, event);
@@ -323,11 +323,89 @@ export default {
       })
     },
     submit() {
-      this.authorizationDialog = true
-
+      if (!isNaN(this.state)) {
+        searchCompanyData({
+          id: this.state
+        }).then((response) => {
+          if (response.data.length != 0) {
+            //搜数字
+            console.debug(response.data)
+            this.companyData = response.data;
+            this.authorizationDialog = true;
+            let companyname = response.data[0].companyname;
+            let companyid = response.data[0].id;
+            this.addSearchRecord(1, companyname, companyid);
+          } else {
+            this.addSearchRecord(0,"", this.state)
+            console.log(response)
+            this.$message({
+              showClose: true,
+              message: '无法查找到相关企业',
+              type: 'error'
+            });
+          }
+        }).catch((error) => {
+          this.$message({
+            showClose: true,
+            message: '网络错误',
+            type: 'error'
+          });
+        })
+      } else {
+        searchCompanyData({
+          companyname: this.state
+        }).then((response) => {
+          if (response.data.length != 0) {
+            console.log(response.data)
+            this.companyData = response.data;
+            console.log(this.companyData)
+            this.authorizationDialog = true;
+            let companyname = response.data[0].companyname;
+            let companyid = response.data[0].id;
+            //搜名字
+            this.addSearchRecord(1, companyname, companyid);
+            console.log(6);
+          } else {
+            this.addSearchRecord(0,this.state)
+            console.log(response)
+            this.$message({
+              showClose: true,
+              message: '无法查找到相关企业',
+              type: 'error'
+            });
+          }
+        }).catch((error) => {
+          this.$message({
+            showClose: true,
+            message: '网络错误',
+            type: 'error'
+          });
+        })
+      }
+    },
+    addSearchRecord(state, companyname, companyid) {
+      addSearchRecord({
+        userid: JSON.parse(localStorage.getItem("user-data")).userid,
+        username: JSON.parse(localStorage.getItem("user-data")).username,
+        state: state,
+        companyname: companyname,
+        companyid: companyid
+      }).then((response) => {
+        //数字
+        console.info("success")
+        console.log(response);
+      }).catch((error) => {
+        console.log(response);
+        console.log(failed);
+        // this.$message({
+        //   showClose: true,
+        //   message: '网络错误',
+        //   type: 'error'
+        // });
+      })
     },
     uploadFile() {
-      this.author = false;
+      // this.author = false;
       this.downloadDialog = true;
     },
     loadAll() {
@@ -340,12 +418,6 @@ export default {
       this.visible = false;
       var company = this.company;
       var results = queryString ? company.filter(this.createStateFilter(queryString)) : company;
-      // // console.log(results)
-      // if (results.length == 0) {
-      // // //   console.log('NULL')
-      //   this.visible = true;
-      //   // results = [{"value": "未能找到相关企业，请提交查询需求"}]
-      // }
       clearTimeout(this.timeout);
       this.timeout = setTimeout(() => {
         if (results.length == 0) {
@@ -359,7 +431,6 @@ export default {
 
     createStateFilter(queryString) {
       return (state) => {
-        // // console.log(state)
         return (state.value.toLowerCase().indexOf(queryString.toLowerCase()) === 0);
       };
     },
@@ -376,17 +447,29 @@ export default {
 </script>
 
 <style>
-.el-notification__title{
+
+
+.el-notification__title {
   /*background-color: #42b983;*/
   font-size: 22px;
 }
 
-.el-notification__content{
+.el-notification__content {
   font-size: 15px;
 }
 </style>
 
 <style scoped lang="less">
+/deep/ .el-dialog {
+  text-align: center;
+  width: 1250px;
+}
+
+/deep/ .el-table .cell {
+  text-align: center;
+
+}
+
 /deep/ .el-tabs__nav-wrap.is-scrollable {
   padding: 0 0;
   box-sizing: border-box;
@@ -396,14 +479,14 @@ export default {
   width: 1px !important;
   height: 1px !important;
   background-color: white;
-  color:white;
+  color: white;
 }
 
 .inner /deep/ .el-tabs__header {
   width: 100% !important;
   height: 100% !important;
   background-color: white;
-  color:black;
+  color: black;
 }
 
 * {
@@ -441,7 +524,6 @@ export default {
   width: 730px;
   height: 200px;
 }
-
 
 
 /deep/ .el-tabs__item {
