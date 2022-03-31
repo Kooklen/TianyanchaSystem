@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c95d7f26-527d-490d-be82-e71f2bae4f0e" name="默认变更列表" comment="test">
+    <list default="true" id="c95d7f26-527d-490d-be82-e71f2bae4f0e" name="默认变更列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/manual.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/manual.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/proSearch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/proSearch.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/search.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +180,8 @@
       <workItem from="1648180915036" duration="16000" />
       <workItem from="1648180941679" duration="3968000" />
       <workItem from="1648520392737" duration="17985000" />
-      <workItem from="1648622695185" duration="1252000" />
+      <workItem from="1648622695185" duration="2526000" />
+      <workItem from="1648717417254" duration="593000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1634634179426</created>
@@ -257,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648192859455</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update frontend application">
+      <created>1648629148784</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1648629148784</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +284,9 @@
     <MESSAGE value="update" />
     <MESSAGE value="后端服务在backEnd&#10;要求java8+" />
     <MESSAGE value="update .MD" />
-    <option name="LAST_COMMIT_MESSAGE" value="update .MD" />
+    <MESSAGE value="update frontend application" />
+    <option name="LAST_COMMIT_MESSAGE" value="update frontend application" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
