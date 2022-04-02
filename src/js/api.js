@@ -74,17 +74,18 @@ export const addSearchRecord = (data) => {
     })
 }
 
-// export const searchCompanyData = (data) => {
-//     return axios.request({
-//         url: '/api/searchCompanyData',
-//         methods: 'post',
-//         data
-//     })
-// }
 
 export const searchCompanyData = (data) => {
     return axios.request({
         url: '/api/searchCompanyData',
+        method: 'post',
+        data
+    })
+}
+
+export const searchCompanyName = (data) => {
+    return axios.request({
+        url: '/api/searchCompanyName',
         method: 'post',
         data
     })

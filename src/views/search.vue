@@ -20,7 +20,17 @@
                   </div>
 
                 </div>
-
+                <div style="width: 50px;" class="casader">
+                  <el-cascader
+                      :options="options"
+                      v-model="selectedOptions"
+                      @change="handleChange"
+                      class="cascader"
+                      style="width: 50px;"
+                      placeholder="请选择地区"
+                  >
+                  </el-cascader>
+                </div>
 
                 <div class="bd2">
                   <el-autocomplete
@@ -28,9 +38,11 @@
                       :fetch-suggestions="querySearchAsync"
                       :placeholder=inputword
                       @select="handleSelect"
-                  >
-                    <div v-if="visible">查找中...</div>
+                      :debounce="0"
+                      :trigger-on-focus="true"
+                      @clear="blurForBug()"
 
+                  >
                   </el-autocomplete>
 
                   <img src="@/img/upload.png" style="width: 40px;height: 40px;" class="upload" @click="toUpload">
@@ -176,13 +188,17 @@ import backStage from "@/views/backStage";
 import pdf from "vue3-pdf";
 import {userMainStore} from "@/store"
 import Manual from "@/components/manual";
-import {addSearchRecord, searchCompanyData} from "@/js/api";
+import {addSearchRecord, searchCompanyData, searchCompanyName} from "@/js/api";
+import {regionData} from 'element-china-area-data'
 
 export default {
   name: "search",
   components: {Manual, backStage, sysMonitor, Header},
   data() {
     return {
+      selectplace:"",
+      options: regionData,
+      selectedOptions: [],
       companyData: [],
       activeName: "first",
       url: "/pdf/intro.pdf",
@@ -206,30 +222,14 @@ export default {
       enterprise: '0',
       legalp: '0',
       search: '0',
-      tableData: [
-        // {
-        //   date: '2016-05-02',
-        //   name: 'John Smith',
-        //   address: 'No.1518,  Jinshajiang Road, Putuo District',
-        // },
-        // {
-        //   date: '2016-05-04',
-        //   name: 'John Smith',
-        //   address: 'No.1518,  Jinshajiang Road, Putuo District',
-        // },
-        // {
-        //   date: '2016-05-01',
-        //   name: 'John Smith',
-        //   address: 'No.1518,  Jinshajiang Road, Putuo District',
-        // },
-      ],
+      tableData: [],
       loading: true,
       selectCompany: '',
     }
   },
   created() {
     const store = userMainStore()
-    console.log(store.count);
+    // console.log(store.count);
     this.handleClick(1, 1)
     this.getNumPages()
     this.userData = JSON.parse(localStorage.getItem("user-data"))
@@ -248,9 +248,14 @@ export default {
   }
   ,
   methods: {
+    handleChange(value) {
+      console.log(value)
+      this.selectplace = value[2];
+      console.log(this.selectplace)
+    },
     changetabs(data) {
       this.activeName = data
-      // console.log(data);
+      // // console.log(data);
     },
     getNumPages() {
       let loadingTask = pdf.createLoadingTask(this.url)
@@ -268,7 +273,7 @@ export default {
       this.downloadDialog = true;
     },
     handleClick(tab, event) {
-      // console.log(tab, event);
+      // // console.log(tab, event);
     },
     handleClose() {
       this.$confirm('确认退出？')
@@ -293,10 +298,10 @@ export default {
       this.all = 1;
       this.enterprise = this.legalp = 0;
       this.inputword = "请输入企业的名称";
-      // // console.log(1)
+      // // // console.log(1)
     },
     enterpriseSearch() {
-      // // console.log(0)
+      // // // console.log(0)
       this.inputword = "请输入企业的户表号";
       this.enterprise = 1;
       this.all = this.legalp = 0;
@@ -336,8 +341,8 @@ export default {
             let companyid = response.data[0].id;
             this.addSearchRecord(1, companyname, companyid);
           } else {
-            this.addSearchRecord(0,"", this.state)
-            console.log(response)
+            this.addSearchRecord(0, "", this.state)
+            // console.log(response)
             this.$message({
               showClose: true,
               message: '无法查找到相关企业',
@@ -356,18 +361,18 @@ export default {
           companyname: this.state
         }).then((response) => {
           if (response.data.length != 0) {
-            console.log(response.data)
+            // console.log(response.data)
             this.companyData = response.data;
-            console.log(this.companyData)
+            // console.log(this.companyData)
             this.authorizationDialog = true;
             let companyname = response.data[0].companyname;
             let companyid = response.data[0].id;
             //搜名字
             this.addSearchRecord(1, companyname, companyid);
-            console.log(6);
+            // console.log(6);
           } else {
-            this.addSearchRecord(0,this.state)
-            console.log(response)
+            this.addSearchRecord(0, this.state)
+            // console.log(response)
             this.$message({
               showClose: true,
               message: '无法查找到相关企业',
@@ -393,10 +398,10 @@ export default {
       }).then((response) => {
         //数字
         console.info("success")
-        console.log(response);
+        // console.log(response);
       }).catch((error) => {
-        console.log(response);
-        console.log(failed);
+        // console.log(response);
+        // console.log(failed);
         // this.$message({
         //   showClose: true,
         //   message: '网络错误',
@@ -415,18 +420,58 @@ export default {
       ];
     },
     querySearchAsync(queryString, cb) {
-      this.visible = false;
-      var company = this.company;
-      var results = queryString ? company.filter(this.createStateFilter(queryString)) : company;
-      clearTimeout(this.timeout);
-      this.timeout = setTimeout(() => {
-        if (results.length == 0) {
-          // // console.log('NULL')
-          this.visible = true;
-          results = [{"value": ""}]
+      if(this.selectplace==null){
+        this.$message({
+          showClose: true,
+          message: '请先选择企业所在地',
+          type: 'error'
+        });
+      }
+
+      console.log("如何触发", queryString, cb);
+      if (queryString == "") {
+        this.companyName = []
+        cb([{value: "历史记录一"}, {value: "历史记录二"}]);
+        cb(this.companyName); // 当然这里的历史记录是后端返给我们的，应该为接口返回的数据
+      } else {
+        //查找公司
+        if (this.state != null) {
+          this.companyName = []
+
+          if(this.selectplace!=null){
+            searchCompanyName({
+              "selectplace":this.selectplace,
+              "companyname": this.state
+            }).then((response) => {
+
+              let company = response.data
+              for (let i = 0; i < company.length; i++) {
+                this.companyName.push({
+                  value: company[i].companyname
+                })
+              }
+              ;
+              console.log(this.companyName);
+            })
+          } else {
+            console.warn("number isn't enough")
+          }
+          }else{
+          this.$message({
+            showClose: true,
+            message: '请先选择企业所在地',
+            type: 'error'
+          });
         }
-        cb(results);
-      }, 1000);
+
+
+
+        // 这里我们模拟从后端的接口异步获取的数据
+        setTimeout(() => {
+          // cb([])    cb函数如果返回一个空数组的话，那个模糊搜索输入建议的下拉选项因为length为0就会消失了
+          cb(this.companyName);
+        }, 500);
+      }
     },
 
     createStateFilter(queryString) {
@@ -436,30 +481,26 @@ export default {
     },
 
     handleSelect(item) {
+      console.log("拿到数据", item);
       this.selectCompany = item.link;
     }
   },
   mounted() {
     this.company = this.loadAll();
-
+  },
+  blurForBug() {
+    document.activeElement.blur()
   }
 }
 </script>
 
-<style>
+<style lang="less" scoped>
 
 
-.el-notification__title {
-  /*background-color: #42b983;*/
-  font-size: 22px;
+.el-input__inner {
+  width: 500px;
 }
 
-.el-notification__content {
-  font-size: 15px;
-}
-</style>
-
-<style scoped lang="less">
 /deep/ .el-dialog {
   text-align: center;
   width: 1250px;
@@ -531,6 +572,15 @@ export default {
 }
 
 .main {
+  .casader {
+    /deep/ .el-input__inner {
+      text-indent: 50px;
+      width: 280px;
+      height: 50px;
+      font-size: 12px;
+    }
+  }
+
   /deep/ .el-input__inner {
     width: 972px;
     height: 84px;
