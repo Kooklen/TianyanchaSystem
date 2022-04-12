@@ -189,15 +189,15 @@ import pdf from "vue3-pdf";
 import {userMainStore} from "@/store"
 import Manual from "@/components/manual";
 import {addSearchRecord, searchCompanyData, searchCompanyName} from "@/js/api";
-import {regionData} from 'element-china-area-data'
+import {provinceAndCityData} from 'element-china-area-data'
 
 export default {
   name: "search",
   components: {Manual, backStage, sysMonitor, Header},
   data() {
     return {
-      selectplace:"",
-      options: regionData,
+      selectplace: "",
+      options: provinceAndCityData,
       selectedOptions: [],
       companyData: [],
       activeName: "first",
@@ -229,7 +229,7 @@ export default {
   },
   created() {
     const store = userMainStore()
-    // console.log(store.count);
+    console.log(store.count);
     this.handleClick(1, 1)
     this.getNumPages()
     this.userData = JSON.parse(localStorage.getItem("user-data"))
@@ -250,12 +250,12 @@ export default {
   methods: {
     handleChange(value) {
       console.log(value)
-      this.selectplace = value[2];
+      this.selectplace = value[1];
       console.log(this.selectplace)
     },
     changetabs(data) {
       this.activeName = data
-      // // console.log(data);
+      // console.log(data);
     },
     getNumPages() {
       let loadingTask = pdf.createLoadingTask(this.url)
@@ -273,7 +273,7 @@ export default {
       this.downloadDialog = true;
     },
     handleClick(tab, event) {
-      // // console.log(tab, event);
+      // console.log(tab, event);
     },
     handleClose() {
       this.$confirm('确认退出？')
@@ -298,10 +298,10 @@ export default {
       this.all = 1;
       this.enterprise = this.legalp = 0;
       this.inputword = "请输入企业的名称";
-      // // // console.log(1)
+      // // console.log(1)
     },
     enterpriseSearch() {
-      // // // console.log(0)
+      // // console.log(0)
       this.inputword = "请输入企业的户表号";
       this.enterprise = 1;
       this.all = this.legalp = 0;
@@ -342,7 +342,7 @@ export default {
             this.addSearchRecord(1, companyname, companyid);
           } else {
             this.addSearchRecord(0, "", this.state)
-            // console.log(response)
+            console.log(response)
             this.$message({
               showClose: true,
               message: '无法查找到相关企业',
@@ -361,18 +361,18 @@ export default {
           companyname: this.state
         }).then((response) => {
           if (response.data.length != 0) {
-            // console.log(response.data)
+            console.log(response.data)
             this.companyData = response.data;
-            // console.log(this.companyData)
+            console.log(this.companyData)
             this.authorizationDialog = true;
             let companyname = response.data[0].companyname;
             let companyid = response.data[0].id;
             //搜名字
             this.addSearchRecord(1, companyname, companyid);
-            // console.log(6);
+            console.log(6);
           } else {
             this.addSearchRecord(0, this.state)
-            // console.log(response)
+            console.log(response)
             this.$message({
               showClose: true,
               message: '无法查找到相关企业',
@@ -398,15 +398,15 @@ export default {
       }).then((response) => {
         //数字
         console.info("success")
-        // console.log(response);
+        console.log(response);
       }).catch((error) => {
-        // console.log(response);
-        // console.log(failed);
-        // this.$message({
-        //   showClose: true,
-        //   message: '网络错误',
-        //   type: 'error'
-        // });
+        console.log(response);
+        console.log(failed);
+        this.$message({
+          showClose: true,
+          message: '网络错误',
+          type: 'error'
+        });
       })
     },
     uploadFile() {
@@ -420,7 +420,7 @@ export default {
       ];
     },
     querySearchAsync(queryString, cb) {
-      if(this.selectplace==null){
+      if (this.selectplace == null) {
         this.$message({
           showClose: true,
           message: '请先选择企业所在地',
@@ -431,16 +431,16 @@ export default {
       console.log("如何触发", queryString, cb);
       if (queryString == "") {
         this.companyName = []
-        cb([{value: "历史记录一"}, {value: "历史记录二"}]);
+        // cb([{value: "历史记录一"}, {value: "历史记录二"}]);
         cb(this.companyName); // 当然这里的历史记录是后端返给我们的，应该为接口返回的数据
       } else {
         //查找公司
         if (this.state != null) {
           this.companyName = []
 
-          if(this.selectplace!=null){
+          if (this.selectplace != null) {
             searchCompanyName({
-              "selectplace":this.selectplace,
+              "selectplace": this.selectplace,
               "companyname": this.state
             }).then((response) => {
 
@@ -454,9 +454,15 @@ export default {
               console.log(this.companyName);
             })
           } else {
-            console.warn("number isn't enough")
+
+            console.log("未选择地区")
+            this.$message({
+              showClose: true,
+              message: '请先选择企业所在地',
+              type: 'error'
+            });
           }
-          }else{
+        } else {
           this.$message({
             showClose: true,
             message: '请先选择企业所在地',
@@ -465,11 +471,16 @@ export default {
         }
 
 
-
         // 这里我们模拟从后端的接口异步获取的数据
         setTimeout(() => {
           // cb([])    cb函数如果返回一个空数组的话，那个模糊搜索输入建议的下拉选项因为length为0就会消失了
-          cb(this.companyName);
+          if (this.companyName == null) {
+            this.company.push(
+                {value: "未找到相关企业"}
+            )
+          } else {
+            cb(this.companyName);
+          }
         }, 500);
       }
     },
@@ -575,7 +586,7 @@ export default {
   .casader {
     /deep/ .el-input__inner {
       text-indent: 50px;
-      width: 280px;
+      width: 200px;
       height: 50px;
       font-size: 12px;
     }

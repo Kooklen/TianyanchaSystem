@@ -2,263 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c95d7f26-527d-490d-be82-e71f2bae4f0e" name="默认变更列表" comment="update frontend application">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/acorn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/acorn.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/ansi-html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/ansi-html.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/atob" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/atob.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/autoprefixer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/autoprefixer.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/browserslist.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/btoa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/btoa.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/cssesc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/cssesc.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/csv2json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/csv2json.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/csv2tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/csv2tsv.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/dsv2dsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/dsv2dsv.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/dsv2json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/dsv2json.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/envinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/envinfo.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/errno" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/errno.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/esbuild" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/esbuild.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/esparse" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/esparse.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/esvalidate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/esvalidate.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/he" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/he.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/highlight" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/highlight.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/html-minifier" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/html-minifier.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/image-size" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/image-size.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/import-local-fixture" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/import-local-fixture.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/is-ci" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/is-ci.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/is-docker" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/is-docker.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/js-yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/js-yaml.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/jsesc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/jsesc.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/json2csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/json2csv.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/json2dsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/json2dsv.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/json2tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/json2tsv.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/json5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/json5.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/katex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/katex.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/lessc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/lessc.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/markdown-it" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/markdown-it.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/miller-rabin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/miller-rabin.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/mime" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/mime.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/mkdirp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/mkdirp.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/multicast-dns" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/multicast-dns.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/nanoid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/nanoid.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/node-which" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/node-which.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/opener" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/opener.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/parser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/parser.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/prettier" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/prettier.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/px2rem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/px2rem.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/regjsparser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/regjsparser.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/resolve" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/resolve.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/rimraf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/rimraf.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/rollup" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/rollup.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/sass.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/semver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/semver.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/sha.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/sha.js.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-conv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-conv.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-sign" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-sign.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-verify" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/sshpk-verify.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/svgo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/svgo.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/terser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/terser.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/tlds" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/tlds.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/tsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/tsc.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/tslint" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/tslint.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/tsserver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/tsserver.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/tsv2csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/tsv2csv.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/tsv2json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/tsv2json.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/uglifyjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/uglifyjs.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/uuid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/uuid.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/vite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/vite.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/vue-cli-service" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/vue-cli-service.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/vue-demi-fix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/vue-demi-fix.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/vue-demi-switch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/vue-demi-switch.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/vuepress" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/vuepress-vite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/vuepress-vite.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/vuepress.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/webpack" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/webpack-bundle-analyzer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/webpack-bundle-analyzer.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/webpack-dev-server" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/webpack-dev-server.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/webpack.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/xss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/xss.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/@vue/cli-service/lib/commands/help.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/@vue/cli-service/lib/webpack/CorsPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/@vue/cli-service/lib/webpack/DashboardPlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/@vue/cli-service/lib/webpack/ModernModePlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/@vue/cli-service/lib/webpack/MovePlugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/@vue/cli-service/lib/webpack/analyzeBundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/ApiIncrementalChecker.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/ApiIncrementalChecker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/ApiIncrementalChecker.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/CancellationToken.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/CancellationToken.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/CancellationToken.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/CompilerHost.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/CompilerHost.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/CompilerHost.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/FilesRegister.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/FilesRegister.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/FilesRegister.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/FilesWatcher.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/FilesWatcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/FilesWatcher.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/FsHelper.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/FsHelper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/FsHelper.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/IncrementalChecker.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/IncrementalChecker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/IncrementalChecker.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/IncrementalCheckerInterface.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/IncrementalCheckerInterface.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/IncrementalCheckerInterface.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/LinkedList.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/LinkedList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/LinkedList.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/Message.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/Message.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/Message.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/NormalizedMessage.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/NormalizedMessage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/NormalizedMessage.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/NormalizedMessageFactories.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/NormalizedMessageFactories.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/NormalizedMessageFactories.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/cluster.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/cluster.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/cluster.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/createEslinter.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/createEslinter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/createEslinter.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/hooks.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/hooks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/hooks.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/index.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/linterConfigHelpers.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/linterConfigHelpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/linterConfigHelpers.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/patchTypescript.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/fork-ts-checker-webpack-plugin/lib/patchTypescript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Ol_Chiki.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Old_Sogdian.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Old_Uyghur.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Oriya.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Osage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Osmanya.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Pahawh_Hmong.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Palmyrene.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Pau_Cin_Hau.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Phags_Pa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Phoenician.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Psalter_Pahlavi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Rejang.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Runic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Samaritan.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Saurashtra.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Sharada.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Shavian.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Siddham.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/SignWriting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Sinhala.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Sogdian.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Sora_Sompeng.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Soyombo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Sundanese.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Syloti_Nagri.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Syriac.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Tagalog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Tagbanwa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Tai_Le.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Tai_Tham.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Tai_Viet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Takri.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Tamil.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Tangsa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Tangut.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Telugu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Thaana.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Thai.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Tibetan.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Tifinagh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Tirhuta.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Toto.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Ugaritic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Vai.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Vithkuqi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Wancho.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Warang_Citi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Yezidi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Yi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/regenerate-unicode-properties/Script_Extensions/Zanabazar_Square.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/technology_bgc.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/index.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/search.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/test3.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/test3.vue" afterDir="false" />
     </list>
@@ -314,7 +60,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../websocket/vue2-websocket" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -324,11 +70,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\Desktop\test_user\src\img" />
       <recent name="C:\Users\DELL\Desktop\test_user\backEnd" />
       <recent name="C:\Users\DELL\Desktop\test_user\public" />
       <recent name="C:\Users\DELL\Desktop\test_user\src\assets" />
       <recent name="C:\Users\DELL\Desktop\test_user\src\md" />
-      <recent name="C:\Users\DELL\Desktop\test_user\docs\.vuepress" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\DELL\Desktop\test_user\src\util" />
@@ -439,7 +185,8 @@
       <workItem from="1648180941679" duration="3968000" />
       <workItem from="1648520392737" duration="17985000" />
       <workItem from="1648622695185" duration="2526000" />
-      <workItem from="1648717417254" duration="21640000" />
+      <workItem from="1648717417254" duration="36299000" />
+      <workItem from="1649398091562" duration="4166000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1634634179426</created>
@@ -518,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648629148784</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update search company name predict">
+      <created>1648887307413</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1648887307413</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +297,8 @@
     <MESSAGE value="后端服务在backEnd&#10;要求java8+" />
     <MESSAGE value="update .MD" />
     <MESSAGE value="update frontend application" />
-    <option name="LAST_COMMIT_MESSAGE" value="update frontend application" />
+    <MESSAGE value="update search company name predict" />
+    <option name="LAST_COMMIT_MESSAGE" value="update search company name predict" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
