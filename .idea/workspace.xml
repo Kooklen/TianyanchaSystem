@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c95d7f26-527d-490d-be82-e71f2bae4f0e" name="默认变更列表" comment="update frontend application">
-      <change afterPath="$PROJECT_DIR$/src/img/technology_bgc.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/search.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/test3.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/test3.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +60,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.22097759" />
     <property name="ts.external.directory.path" value="C:\Users\DELL\Desktop\test_user\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -186,7 +183,7 @@
       <workItem from="1648520392737" duration="17985000" />
       <workItem from="1648622695185" duration="2526000" />
       <workItem from="1648717417254" duration="36299000" />
-      <workItem from="1649398091562" duration="4166000" />
+      <workItem from="1649398091562" duration="7020000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1634634179426</created>
@@ -272,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648887307413</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update frontend application">
+      <created>1649748569234</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1649748569235</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,9 +300,9 @@
     <MESSAGE value="update" />
     <MESSAGE value="后端服务在backEnd&#10;要求java8+" />
     <MESSAGE value="update .MD" />
-    <MESSAGE value="update frontend application" />
     <MESSAGE value="update search company name predict" />
-    <option name="LAST_COMMIT_MESSAGE" value="update search company name predict" />
+    <MESSAGE value="update frontend application" />
+    <option name="LAST_COMMIT_MESSAGE" value="update frontend application" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

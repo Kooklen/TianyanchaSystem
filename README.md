@@ -3,7 +3,7 @@
 #技术栈
 ```
 前端：vue3+Webpack+Typescript+Elementplus+less
-后端：Springboot+Redis+Mysql8
+后端：Springboot+Redis+Mysql8+
 ```
 
 ## 运行准备
