@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c95d7f26-527d-490d-be82-e71f2bae4f0e" name="默认变更列表" comment="update frontend application">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/test3.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/test3.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +186,13 @@
       <workItem from="1648622695185" duration="2526000" />
       <workItem from="1648717417254" duration="36299000" />
       <workItem from="1649398091562" duration="7020000" />
+      <workItem from="1649992053363" duration="598000" />
+      <workItem from="1650003944754" duration="2659000" />
+      <workItem from="1650245342709" duration="3018000" />
+      <workItem from="1650530928779" duration="5123000" />
+      <workItem from="1650763202283" duration="737000" />
+      <workItem from="1650768692405" duration="772000" />
+      <workItem from="1650783699352" duration="509000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1634634179426</created>
