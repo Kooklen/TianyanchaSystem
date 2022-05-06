@@ -2,6 +2,7 @@
 
 #技术栈
 ```
+优化了一些bug
 前端：vue3+Webpack+Typescript+Elementplus+less
 后端：Springboot+Redis+Mysql8+
 ```

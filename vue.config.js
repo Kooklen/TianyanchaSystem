@@ -77,9 +77,9 @@ module.exports = {
     devServer: {
         proxy: {
             '/api': {
-                target: 'http://http://192.168.1.105:9081/', //跨域接口域名
+                target: 'http://192.168.1.104:9081/', //跨域接口域名
                 changeOrigin: true,             //是否跨域
-                ws: true,                       //是否代理 websockets
+                ws: false,                       //是否代理 websockets
                 secure: false,                   //是否https接口
                 pathRewrite: {                  //路径重置
                     '^/api': ''
