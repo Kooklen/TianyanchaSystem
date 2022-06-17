@@ -255,8 +255,8 @@
     </configuration>
     <list>
       <item itemvalue="Node.js.未命名" />
-      <item itemvalue="npm.serve" />
       <item itemvalue="npm.build" />
+      <item itemvalue="npm.serve" />
     </list>
     <recent_temporary>
       <list>
